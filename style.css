@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+}
+main{
+    margin: 20px;
+}
+h1{
+    font-size: 50px;
+    color:rgb(55, 55, 55);
+    text-align: center;
+}
+h2{
+    font-size: 25px;
+    color: rgb(55, 55, 55);
+    text-align: center;
+}
+
+.navbar{
+    background-color: darkgreen;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline-flex;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: forestgreen;
+}
+
+
+.banner ul{
+    list-style-type: none;
+    position: absolute;
+    inset: 0;
+}
+.banner_image{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.banner{
+    width: 100%;
+    height: 20rem;
+    position: relative;
+}
