@@ -74,21 +74,41 @@ nav{
     position: relative;
 }
 
+
 .main_container{
     display: flex;
     justify-content: space-between;
     margin: 1rem;
 }
+
 .about{
-    width: 65%;
+    display: flex;
+    flex-direction: column;
+    width: 58%;
     background-color: rgb(2, 129, 2);
     border-radius: 3px;
 }
+.about_content{
+    display: flex;
+    margin: 0.5rem;
+    background-color: rgb(216, 215, 215);
+    border-radius: 3px;
+}
+.about_content div{
+    margin: 0.5rem;
+}
+.profile_picture{
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 3px;
+    margin: 0.5rem;
+}
+
 .projects_list{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33%;
+    width: 40%;
     background-color: rgb(2, 129, 2);
     border-radius: 3px;
 }
@@ -109,9 +129,6 @@ nav{
     text-decoration: none;
     color: white;
 }
-.projects_list a:hover{
-    text-decoration: underline;
-}
 
 #green_button{
     text-decoration: none;
@@ -122,4 +139,7 @@ nav{
     padding: 0.5rem;
     width: inherit;
     font-weight: bold;
+}
+.projects_list a:hover{
+    text-decoration: underline;
 }
