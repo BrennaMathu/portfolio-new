@@ -5,9 +5,7 @@ body{
     height: 100%;
     background-color: darkgreen;
 }
-main{
-    margin: 20px; /* Remove this to check for improvement web version*/
-}
+
 
 /* Fonts adjustments*/
 strong{
@@ -32,6 +30,7 @@ h3{
 h4{
     font-size: 25;
     color: darkgreen;
+    text-align: center;
 }
 
 /* Navigation Bar*/
@@ -50,7 +49,7 @@ nav{
 
 .menu_references{
     list-style-type: none;
-    padding: 0px;
+    padding: 0;
     margin: 0;
     display: flex;
 }
@@ -59,7 +58,7 @@ nav{
     text-decoration: none;
     text-align: center;
     display: block;
-    padding: 15px;
+    padding: 17.5px;
 }
 .menu_references a:hover{
     background-color: forestgreen;
@@ -96,60 +95,64 @@ nav{
     border-radius: 3px;
     background-color: white;
 }
+.contact_icon:hover{
+    background-color: rgb(204, 204, 204);
+}
 
 
 /* Main container*/
 .main_container{
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1%;
 }
 
 .left_section{
     display: flex;
     flex-direction: column;
-    width: 58%;
+    width: 60%;
     height: auto;
     background-color: rgb(2, 129, 2);
     border-radius: 3px;
 }
 .about_content{
     display: flex;
-    margin: 0.5rem;
+    margin: 2%;
     background-color: rgb(216, 215, 215);
     border-radius: 3px;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    height:min-content;
 }
 .about_content div{
-    margin: 0.5rem;
+    margin: 2%;
 }
 .profile_picture{
-    max-width: 15rem;
-    max-height: 15rem;
+    width: 25%;
     border-radius: 3px;
-    margin: 0.5rem;
+    margin: 2%;
 }
 
 .skills_content{
     display: flex;
-    margin: 0.5rem;
+    margin: 2%;
     background-color: rgb(216, 215, 215);
     border-radius: 3px;
     align-items: center;
-    justify-content: space-evenly;
+    
     flex-wrap: wrap;
 }
 #Skill{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 7rem;
+    justify-content: center;
+    height: auto;
+    margin: 2%;
 }
 .skills_content img{
-    width: 3rem;
-    height: 3rem;
-    margin: 0.5rem;
+    width: 5rem;
+    padding: 0.5rem;
 }
 
 .Ed_Work_Title{
@@ -160,51 +163,54 @@ nav{
 .Ed_Work_container{
     display: flex;
     justify-content: space-between;
-    margin: 0.5rem;   
+    margin: 2%;   
 }
 .Ed_Work_container div{
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 49%;
     height: auto;
     background-color: rgb(216, 215, 215);
     border-radius: 3px;
 }
 #Ed-Work_line{
-    margin: 0.5rem;
+    margin: 2%;
     width: auto;
 }
-/* Options to make different headings in the same line work
--use flexbox to wrap them against their will
-- Headings are what makes them go to the next line. Use different html elements and attach css classes to them.
--Make it so it's on the next line everywhere for stylistic reasons. Check if it works at different widths.
-*/
 
 
 .projects_list{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 39%;
     background-color: rgb(2, 129, 2);
     border-radius: 3px;
 }
 .project{
     display: flex;
     flex-direction: column;
-    margin: 0.5rem;
+    margin: 2%;
     background-color: rgb(216, 215, 215);
     border-radius: 3px;
+    width: 94%;
 }
 .project_line{
-    width: 90%;
+    width: 96%;
     align-self: center;
-    margin: 0.5rem;
+    text-align: center;
+    margin: 2%;
+}
+.project div{
+    margin: 1%;
 }
 
 .projects_list a{
     text-decoration: none;
     color: white;
+}
+.projects_list a:hover{
+    text-decoration: underline;
 }
 
 #green_button{
@@ -213,10 +219,10 @@ nav{
     color: white;
     text-align: center;
     border-radius: 3px;
-    padding: 0.5rem;
-    width: inherit;
+    padding: 1%;
+    width: auto;
     font-weight: bold;
 }
-.projects_list a:hover{
-    text-decoration: underline;
+#green_button:hover{
+    background-color: forestgreen;
 }
