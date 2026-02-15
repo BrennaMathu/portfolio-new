@@ -6,7 +6,12 @@ body{
     background-color: darkgreen;
 }
 main{
-    margin: 20px;
+    margin: 20px; /* Remove this to check for improvement web version*/
+}
+
+/* Fonts adjustments*/
+strong{
+    color: darkgreen;
 }
 h1{
     font-size: 50px;
@@ -27,9 +32,9 @@ h3{
 h4{
     font-size: 25;
     color: darkgreen;
-    text-align: center;
 }
 
+/* Navigation Bar*/
 .title{
     font-size: 20px;
     color: white;
@@ -60,7 +65,7 @@ nav{
     background-color: forestgreen;
 }
 
-
+/* Title Banner with image and contact references*/
 .banner ul{
     list-style-type: none;
     position: absolute;
@@ -93,6 +98,7 @@ nav{
 }
 
 
+/* Main container*/
 .main_container{
     display: flex;
     justify-content: space-between;
@@ -145,6 +151,35 @@ nav{
     height: 3rem;
     margin: 0.5rem;
 }
+
+.Ed_Work_Title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Ed_Work_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;   
+}
+.Ed_Work_container div{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: auto;
+    background-color: rgb(216, 215, 215);
+    border-radius: 3px;
+}
+#Ed-Work_line{
+    margin: 0.5rem;
+    width: auto;
+}
+/* Options to make different headings in the same line work
+-use flexbox to wrap them against their will
+- Headings are what makes them go to the next line. Use different html elements and attach css classes to them.
+-Make it so it's on the next line everywhere for stylistic reasons. Check if it works at different widths.
+*/
+
 
 .projects_list{
     display: flex;
